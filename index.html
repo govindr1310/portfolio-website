@@ -3,12 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Govind R - Cloud Platform Engineer and DevOps Specialist. Building modern, scalable cloud infrastructure." />
+    <meta name="theme-color" content="#0A1128" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>Govind R | Cloud Platform Engineer</title>
-    <link rel="stylesheet" href="/twitter-override.css">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" as="style" />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    
+    <!-- Single CSS file for the entire site -->
+    <link rel="stylesheet" href="/warp-reference.css?v=1685779350" id="main-stylesheet" />
   </head>
   <body>
+    <!-- Page transition overlay -->
+    <div class="page-transition"></div>
+    
+    <!-- Root element for React app -->
     <div id="root"></div>
+    
+    <!-- Scripts -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

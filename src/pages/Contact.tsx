@@ -99,9 +99,9 @@ const Contact = () => {
             
             {/* Contact Info */}
             <div>
-              <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
+              <h2 className="text-2xl font-bold mb-6 text-center">Contact Information</h2>
+              <div className="space-y-6 flex flex-col items-center text-center">
+                <div className="flex flex-col items-center space-y-2">
                   <div className="bg-primary-500/20 p-3 rounded-full">
                     <FaEnvelope className="text-primary-500" size={20} />
                   </div>
@@ -111,7 +111,7 @@ const Contact = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-4">
+                <div className="flex flex-col items-center space-y-2">
                   <div className="bg-primary-500/20 p-3 rounded-full">
                     <FaMapMarkerAlt className="text-primary-500" size={20} />
                   </div>
@@ -121,9 +121,9 @@ const Contact = () => {
                   </div>
                 </div>
                 
-                <div className="pt-6 border-t border-dark-700">
-                  <h3 className="font-medium text-lg mb-4">Connect With Me</h3>
-                  <div className="flex space-x-4">
+                <div className="pt-6 border-t border-dark-700 w-full text-center">
+                  <h3 className="font-medium text-lg mb-4 text-center">Connect With Me</h3>
+                  <div className="flex justify-center space-x-4">
                     <a 
                       href="#" 
                       className="bg-dark-800 hover:bg-dark-700 p-3 rounded-full transition-colors duration-300"

@@ -8,43 +8,43 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: "#e8f5fe",
-          100: "#d4edfd",
-          200: "#a8dafc",
-          300: "#7dc9fa",
-          400: "#51b7f9",
-          500: "#1DA1F2", // Twitter blue
-          600: "#1a81c2",
-          700: "#146191",
-          800: "#0d4061",
-          900: "#072030",
-          950: "#051018",
+          50: "#e3f8eb",
+          100: "#c6f2d6",
+          200: "#a9ecb8",
+          300: "#7ce39a",
+          400: "#4ed97c",
+          500: "#1DB954", // Spotify green
+          600: "#18a349",
+          700: "#14833a",
+          800: "#106831",
+          900: "#0c4c24",
+          950: "#07331a",
         },
         secondary: {
-          50: "#f7f9f9",
-          100: "#e7eaeb",
-          200: "#d0d6d9",
-          300: "#a9b5bb",
-          400: "#8496a0",
-          500: "#657786", // Twitter secondary blue-gray
-          600: "#505f6c",
-          700: "#3c4853",
-          800: "#283039",
-          900: "#141920",
-          950: "#0a0d10",
+          50: "#efefef",
+          100: "#e1e1e1",
+          200: "#c8c8c8",
+          300: "#acacac",
+          400: "#919191",
+          500: "#818181", // Spotify medium gray
+          600: "#535353",
+          700: "#434343",
+          800: "#333333",
+          900: "#1a1a1a",
+          950: "#121212", // Spotify dark gray (card backgrounds)
         },
-        tertiary: "#151030",
+        tertiary: "#1DB954", // Spotify green
         dark: {
-          50: "#E7E9EA", // Twitter text color
-          100: "#d1d9df",
-          200: "#a5b5c0",
-          300: "#7991a0",
-          400: "#536d7d",
-          500: "#3a4a54",
-          600: "#2F3336", // Twitter border/divider color
-          700: "#263238",
-          800: "#1D2A35",
-          900: "#15202B", // Twitter background
+          50: "#ffffff", // White text
+          100: "#f0f0f0",
+          200: "#e6e6e6",
+          300: "#b3b3b3", // Spotify light gray text
+          400: "#727272",
+          500: "#535353",
+          600: "#333333",
+          700: "#282828", // Spotify darker gray
+          800: "#181818", // Spotify darker panel
+          900: "#121212", // Spotify main background
           950: "#000000", // Black
         },
         "black-100": "#100d25",
@@ -52,14 +52,14 @@ export default {
         "white-100": "#f3f3f3",
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
-        mono: ['Fira Code', 'monospace'], // Changed to Fira Code for a more developer-focused look
+        sans: ['Circular', 'Helvetica', 'Arial', 'sans-serif'],
+        display: ['Circular', 'Helvetica', 'Arial', 'sans-serif'],
+        mono: ['Consolas', 'Monaco', 'monospace'], // Spotify-like code styling
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #000000",
-        'neon': "0 0 5px rgba(29, 161, 242, 0.7), 0 0 20px rgba(29, 161, 242, 0.5)", // Twitter blue glow
-        'neon-purple': "0 0 5px rgba(29, 161, 242, 0.7), 0 0 20px rgba(29, 161, 242, 0.4)",
+        card: "0px 8px 24px rgba(0, 0, 0, 0.5)",
+        'subtle': "0 2px 5px rgba(0, 0, 0, 0.3)", // Spotify subtle shadow
+        'elevated': "0 8px 16px rgba(0, 0, 0, 0.3)",
       },
       screens: {
         xs: "450px",

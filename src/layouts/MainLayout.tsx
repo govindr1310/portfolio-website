@@ -41,12 +41,12 @@ const MainLayout = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden md:flex items-center space-x-4">
               {navLinks.map((link, index) => (
                 <Link 
                   key={index}
                   to={link.path} 
-                  className="text-white hover:text-primary-400 transition-colors duration-300"
+                  className="nav-spotify-button"
                 >
                   {link.name}
                 </Link>
