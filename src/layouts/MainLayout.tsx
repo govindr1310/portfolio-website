@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaTwitter, FaBars, FaTimes } from 'react-icons/fa';
 import ThemeToggle from '../components/ThemeToggle';
@@ -8,7 +8,9 @@ const MainLayout = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const { theme } = useTheme();
+  // We're using useTheme to access the theme context but not using the theme value directly
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { theme: _theme } = useTheme();
 
   // Navigation links
   const navLinks = [
