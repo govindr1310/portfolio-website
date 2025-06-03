@@ -1,0 +1,14 @@
+        // Dark theme
+        dark: {
+          bg: {
+            primary: "#0f0f0f", // True black with slight softness
+            secondary: "#1a1a1a", // Slightly lighter black
+            tertiary: "#2a2a2a", // Dark gray for hover states
+          },
+          text: {
+            primary: "#f9fafb", // Near white
+            secondary: "#e2e8f0", // Light gray
+            tertiary: "#94a3b8", // Medium gray
+          },
+          border: "#2a2a2a", // Dark border
+        },
