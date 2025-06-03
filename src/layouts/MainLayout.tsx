@@ -110,7 +110,7 @@ const MainLayout = () => {
                 <span className="text-primary-500">G</span>ovind <span className="text-primary-500">R</span>
               </h2>
               <p className="text-dark-300 mb-4">
-                A passionate full-stack developer creating beautiful, functional digital experiences.
+                A Cloud Platform Engineer creating secure, scalable infrastructure solutions.
               </p>
             </div>
 
@@ -131,14 +131,14 @@ const MainLayout = () => {
             </div>
 
             {/* Contact */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Connect</h3>
-              <div className="flex space-x-4 mb-4">
+            <div className="flex flex-col items-center">
+              <h3 className="text-lg font-semibold mb-4 text-center">Connect</h3>
+              <div className="flex justify-center mb-4 p-0">
                 <a 
                   href="https://github.com/govindr" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-dark-300 hover:text-white transition-colors duration-300"
+                  className="text-dark-300 hover:text-white transition-colors duration-300 mr-4"
                   aria-label="GitHub"
                 >
                   <FaGithub size={24} />
@@ -147,7 +147,7 @@ const MainLayout = () => {
                   href="https://linkedin.com/in/govindr" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-dark-300 hover:text-white transition-colors duration-300"
+                  className="text-dark-300 hover:text-white transition-colors duration-300 mr-4"
                   aria-label="LinkedIn"
                 >
                   <FaLinkedin size={24} />
@@ -162,7 +162,7 @@ const MainLayout = () => {
                   <FaTwitter size={24} />
                 </a>
               </div>
-              <p className="text-dark-300">email@example.com</p>
+              <p className="text-dark-300 text-center">email@example.com</p>
             </div>
           </div>
 

@@ -132,7 +132,7 @@ const Home = () => {
             >
               {/* Hero illustration/image */}
               <div className="relative w-80 h-80">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-secondary-600 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+                <div className="absolute inset-0 bg-primary-500 rounded-full opacity-15 blur-3xl animate-pulse"></div>
                 <div className="absolute inset-8 border-2 border-primary-400 rounded-full opacity-50 animate-spin" style={{ animationDuration: '15s' }}></div>
                 <div className="absolute inset-16 border-2 border-secondary-400 rounded-full opacity-50 animate-spin" style={{ animationDuration: '10s', animationDirection: 'reverse' }}></div>
                 <div className="relative w-full h-full flex items-center justify-center">
@@ -178,7 +178,7 @@ const Home = () => {
                     alt={project.title} 
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
+                  <div className="absolute inset-0 bg-dark-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                     <div className="flex space-x-4">
                       <a 
                         href={project.github} 
@@ -235,7 +235,7 @@ const Home = () => {
 
       {/* Skills Section */}
       <section className="py-20 bg-dark-950 relative">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(200,200,200,0.1)_0,transparent_70%)]"></div>
+        <div className="absolute inset-0 bg-cyber-grid bg-[size:40px_40px] opacity-5"></div>
         <div className="container-custom relative z-10">
           <motion.div 
             className="text-center mb-16"
@@ -272,10 +272,14 @@ const Home = () => {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary-800 to-secondary-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_white_0,_transparent_100%)] opacity-30"></div>
-          <div className="absolute inset-0 bg-cyber-grid bg-[size:20px_20px] opacity-20"></div>
+      <section className="py-20 bg-dark-900 relative overflow-hidden">
+        <div className="absolute inset-0">
+          {/* Subtle Twitter-blue accent line at top */}
+          <div className="absolute top-0 left-0 right-0 h-1 bg-primary-500"></div>
+          {/* Subtle grid pattern for texture */}
+          <div className="absolute inset-0 bg-cyber-grid bg-[size:30px_30px] opacity-10"></div>
+          {/* Very subtle blue glow in the background */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-primary-500/5 blur-[100px]"></div>
         </div>
         
         <div className="container-custom relative z-10">
@@ -286,12 +290,12 @@ const Home = () => {
             viewport={{ once: true }}
             variants={fadeIn}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's Build <span className="text-white">Cloud</span> Infrastructure</h2>
-            <p className="text-white/80 text-lg mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's Build <span className="text-primary-500">Cloud</span> Infrastructure</h2>
+            <p className="text-dark-50/90 text-lg mb-10">
               Looking to modernize your infrastructure or implement DevOps practices? I'd love to collaborate on creating scalable, secure, and efficient cloud solutions.
             </p>
             
-            <Link to="/contact" className="btn bg-dark-950 text-primary-400 border border-primary-500 hover:bg-dark-900 hover:shadow-neon text-lg px-8 py-4 transition-all duration-300">
+            <Link to="/contact" className="btn bg-primary-500 text-white hover:bg-primary-600 shadow-sm hover:shadow-neon text-lg px-8 py-4 rounded-full transition-all duration-300">
               Get In Touch
             </Link>
           </motion.div>
