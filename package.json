@@ -8,8 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postinstall": "npm run setup-deps",
-    "setup-deps": "node -e \"try { require('fs').chmodSync('./setup-dependencies.sh', 0o755); require('child_process').execSync('./setup-dependencies.sh', {stdio: 'inherit'}); } catch(e) { console.error(e); }\""
+    "prepare": "mkdir -p src/contexts src/components src/styles public/patterns public/fonts"
   },
   "dependencies": {
     "framer-motion": "^12.15.0",

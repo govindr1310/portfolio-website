@@ -1,0 +1,17 @@
+/* Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Plus Jakarta Sans and Outfit - as seen in your index.html */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
+/* Fallback system fonts */
+@font-face {
+  font-family: 'Geist';
+  src: local('Inter'), local('SF Pro Display'), local('Segoe UI'), local('Roboto'), local('Helvetica Neue');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
