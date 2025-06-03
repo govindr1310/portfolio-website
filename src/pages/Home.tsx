@@ -82,7 +82,7 @@ const Home = () => {
             '--tw-gradient-from': isDark ? '#6366f1' : '#818cf8',
             '--tw-gradient-to': 'transparent',
             '--tw-gradient-stops': 'var(--tw-gradient-from), var(--tw-gradient-to)'
-          }}
+          } as React.CSSProperties}
         ></div>
         
         <div 
@@ -93,7 +93,7 @@ const Home = () => {
             '--tw-gradient-from': isDark ? '#10b981' : '#34d399',
             '--tw-gradient-to': 'transparent',
             '--tw-gradient-stops': 'var(--tw-gradient-from), var(--tw-gradient-to)'
-          }}
+          } as React.CSSProperties}
         ></div>
         
         <div className="container mx-auto px-4 relative z-10">
@@ -336,7 +336,7 @@ const Home = () => {
               '--tw-gradient-from': isDark ? '#6366f1' : '#818cf8',
               '--tw-gradient-to': 'transparent',
               '--tw-gradient-stops': 'var(--tw-gradient-from), var(--tw-gradient-to)'
-            }}
+            } as React.CSSProperties}
           ></div>
         </div>
         
