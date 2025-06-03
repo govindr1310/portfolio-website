@@ -20,14 +20,6 @@ const staggerContainer = {
   }
 };
 
-const Home = () => {const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
-
 const Home = () => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
