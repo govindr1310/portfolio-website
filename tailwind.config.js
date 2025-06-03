@@ -63,18 +63,19 @@ export default {
           border: "#e5e7eb", // Light border
         },
         // Dark theme
+        // Dark theme
         dark: {
           bg: {
-            primary: "#0f172a", // Deep blue-black
-            secondary: "#1e293b", // Slightly lighter blue-black
-            tertiary: "#334155", // Blue-gray for hover states
+            primary: "#0f0f0f", // True black with slight softness
+            secondary: "#1a1a1a", // Slightly lighter black
+            tertiary: "#2a2a2a", // Dark gray for hover states
           },
           text: {
             primary: "#f9fafb", // Near white
             secondary: "#e2e8f0", // Light gray
             tertiary: "#94a3b8", // Medium gray
           },
-          border: "#1e293b", // Dark border
+          border: "#2a2a2a", // Dark border
         },
       },
       fontFamily: {
