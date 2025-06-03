@@ -1,1 +1,37 @@
-/* All styles moved to warp-theme.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Import theme transitions */
+@import './styles/theme-transitions.css';
+
+/* Base styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  color: theme('colors.light.text.primary');
+  background-color: theme('colors.light.bg.primary');
+}
+
+.dark body {
+  color: theme('colors.dark.text.primary');
+  background-color: theme('colors.dark.bg.primary');
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid theme('colors.primary.500');
+  outline-offset: 2px;
+}

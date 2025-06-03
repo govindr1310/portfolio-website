@@ -1,0 +1,36 @@
+/* ====== Theme Transitions ====== */
+
+/* Apply transitions to all elements for smooth theme changes */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* Elements that should have faster transitions */
+button, a, input, select, textarea {
+  transition-duration: 150ms;
+}
+
+/* Elements that should have slower transitions */
+body, main, section, header, footer, nav, aside {
+  transition-duration: 300ms;
+}
+
+/* Disable transitions for elements where it might cause performance issues */
+.disable-transitions,
+.disable-transitions *,
+.disable-transitions *::before,
+.disable-transitions *::after {
+  transition: none !important;
+}
+
+/* Add reduced motion support for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
