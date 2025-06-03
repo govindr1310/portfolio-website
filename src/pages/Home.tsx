@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaDocker, FaMicrosoft } from 'react-icons/fa';
 import { SiKubernetes, SiTerraform, SiAmazon, SiGithubactions } from 'react-icons/si';
 import { useTheme } from '../contexts/ThemeContext';
+import CodeAnimation from '../components/animations/CodeAnimation';
 
 // Animation variants
 const fadeIn = {
@@ -12,6 +13,14 @@ const fadeIn = {
 };
 
 const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
+
+const Home = () => {const staggerContainer = {
   animate: {
     transition: {
       staggerChildren: 0.1
@@ -159,20 +168,8 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="hidden lg:flex justify-center items-center"
             >
-              {/* Hero illustration/image with modern aesthetic */}
-              <div className="relative w-80 h-80">
-                <div className="absolute inset-0 rounded-full opacity-20 blur-3xl animate-pulse-subtle" 
-                     style={{ background: 'radial-gradient(circle, var(--tw-gradient-stops))',
-                             '--tw-gradient-from': '#6366f1',
-                             '--tw-gradient-to': 'transparent',
-                             '--tw-gradient-stops': 'var(--tw-gradient-from), var(--tw-gradient-to)'
-                           }}></div>
-                <div className="absolute inset-8 border-2 border-primary-400/30 rounded-full opacity-50 animate-spin-slow"></div>
-                <div className="absolute inset-16 border-2 border-accent-400/30 rounded-full opacity-50 animate-spin-slow" style={{ animationDirection: 'reverse', animationDuration: '15s' }}></div>
-                <div className="relative w-full h-full flex items-center justify-center">
-                  <div className="text-8xl font-bold opacity-80 text-primary-500/80">GR</div>
-                </div>
-              </div>
+              {/* Code Animation Component */}
+              <CodeAnimation />
             </motion.div>
           </div>
         </div>
